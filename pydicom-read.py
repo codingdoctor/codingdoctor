@@ -15,8 +15,8 @@ RefDs = dicom.read_file(lstFilesDCM[1])
 
 # Load dimensions based on the number of rows, columns, and slices (along the Z axis)
 ConstPixelDims = (int(RefDs.Rows), int(RefDs.Columns), len(lstFilesDCM))
-print('Dimension in Ref file: {}'.format(RefDs.pixel_array.shape))
-print('Dim + slides: {} px x {} px x {} slides'.format(RefDs.Rows, RefDs.Columns, len(lstFilesDCM)))
+# print('Dimension in Ref file: {}'.format(RefDs.pixel_array.shape))
+# print('Dim + slides: {} px x {} px x {} slides'.format(RefDs.Rows, RefDs.Columns, len(lstFilesDCM)))
 
 # Load spacing values (in mm)
 ConstPixelSpacing = (float(RefDs.PixelSpacing[0]), float(RefDs.PixelSpacing[1]), float(RefDs.SliceThickness))
@@ -26,10 +26,10 @@ z = numpy.arange(0.0, (ConstPixelDims[2]+1)*ConstPixelSpacing[2], ConstPixelSpac
 
 # The array is sized based on 'ConstPixelDims'
 ArrayDicom = numpy.zeros(ConstPixelDims, dtype=RefDs.pixel_array.dtype)
-print('Dim in numpy array: {}'.format(ArrayDicom.shape))
+# print('Dim in numpy array: {}'.format(ArrayDicom.shape))
 
 # loop through all the DICOM files
-for filenameDCM in lstFilesDCM[1:-1]:
+for filenameDCM in lstFilesDCM[1:-1]: # Modify to get desired slides
   # read the file
   ds = dicom.read_file(filenameDCM)
   # store the raw image data
