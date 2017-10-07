@@ -41,9 +41,7 @@ for line in lines:
 print(translated[10:13])
 ```
 
-```
 ['When caring for the geriatric population consideration must be given to the physiological, anatomical, and hormonal shifts related to aging in approaching the emergency complications of illness or injury of the genital and urinary systems. Special attention should be paid to the challenges of obtaining a complete and relevant history and physical of the genital and renal systems in the aged. It can be more difficult to achieve these goals in the hustle of the busy emergency department (ED), but with forethought these goals can be met.', '노인 인구를 돌보는 경우 생식기계 및 비뇨기 계통의 질병 또는 상해의 응급 합병증에 접근 할 때 노화와 관련된 생리 학적, 해부학 적 및 호르몬 변화를 고려해야합니다. 고령자의 생식기 및 신장 시스템에 대한 완전하고 관련있는 병력 및 신체 검사를 얻으려는 시도에 특별한주의를 기울여야한다. 바쁜 응급실 (ED)의 소동 속에서 이러한 목표를 달성하기가 더 어려울 수 있지만, 이러한 목표를 달성하기 위해서는 사전 계획을 세워야합니다.']
-```
 
 ```python
 with open("output.txt", "w") as output:
