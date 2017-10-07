@@ -17,15 +17,6 @@ print(len(lines), 'lines imported.')
 
 그래서 .rstrip() 으로 뒤에 붙는 chomp를 다 지워버리자.
 
----
-
-혹시 추가로 알고 싶은 사람을 위해 위키 ([https://ko.wikipedia.org/wiki/새줄\_문자](https://ko.wikipedia.org/wiki/%EC%83%88%EC%A4%84_%EB%AC%B8%EC%9E%90)) 에서 설명하는 내용을 추가한다
-
-***새줄 문자**(newline)는 [텍스트](https://ko.wikipedia.org/wiki/%ED%85%8D%EC%8A%A4%ED%8A%B8 "텍스트")의 한 줄이 끝남을 표시하는 [문자](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90 "문자") 또는 [문자열](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90%EC%97%B4 "문자열")이다. **개행 문자**, **줄바꿈 문자**(line break), **EOL**(end-of-line)과 같은 뜻이다. 기종이나 [운영 체제](https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C "운영 체제")에 따라 새줄 문자를 나타내는 코드가 다를 수도 있다. 그래서 텍스트를 다른 시스템으로 전송할 때 새줄 문자의 치환 작업도 필요하다.*
-
-LF[멀틱스](https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B1%EC%8A%A4 "멀틱스"), [유닉스](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%89%EC%8A%A4 "유닉스"), [리눅스](https://ko.wikipedia.org/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4 "리눅스"), [제닉스](https://ko.wikipedia.org/wiki/%EC%A0%9C%EB%8B%89%EC%8A%A4 "제닉스"), [AIX](https://ko.wikipedia.org/wiki/AIX "AIX"), [OS X](https://ko.wikipedia.org/wiki/OS_X "OS X"), [FreeBSD](https://ko.wikipedia.org/wiki/FreeBSD "FreeBSD")CR+LF[DEC TOPS-10](https://ko.wikipedia.org/w/index.php?title=DEC_TOPS-10&action=edit&redlink=1 "DEC TOPS-10 (없는 문서)"), [RT-11](https://ko.wikipedia.org/w/index.php?title=RT-11&action=edit&redlink=1 "RT-11 (없는 문서)"), [CP/M](https://ko.wikipedia.org/wiki/CP/M "CP/M"), [MP/M](https://ko.wikipedia.org/w/index.php?title=MP/M&action=edit&redlink=1 "MP/M (없는 문서)"), [도스](https://ko.wikipedia.org/wiki/%EB%8F%84%EC%8A%A4 "도스"), [OS/2](https://ko.wikipedia.org/wiki/OS/2 "OS/2"), [윈도](https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8_%EC%9C%88%EB%8F%84 "마이크로소프트 윈도"), [심비안 OS](https://ko.wikipedia.org/wiki/%EC%8B%AC%EB%B9%84%EC%95%88_OS "심비안 OS"), [팜 OS](https://ko.wikipedia.org/wiki/%ED%8C%9C_OS "팜 OS")CR[코모도어 8비트 머신](https://ko.wikipedia.org/w/index.php?title=%EC%BD%94%EB%AA%A8%EB%8F%84%EC%96%B4_8%EB%B9%84%ED%8A%B8_%EB%A8%B8%EC%8B%A0&action=edit&redlink=1 "코모도어 8비트 머신 (없는 문서)"), [TRS-80](https://ko.wikipedia.org/w/index.php?title=TRS-80&action=edit&redlink=1 "TRS-80 (없는 문서)"), [애플 II](https://ko.wikipedia.org/wiki/%EC%95%A0%ED%94%8C_II "애플 II"), [맥 OS](https://ko.wikipedia.org/wiki/%EB%A7%A5_OS "맥 OS") (버전 9 이하), [OS-9](https://ko.wikipedia.org/w/index.php?title=OS-9&action=edit&redlink=1 "OS-9 (없는 문서)")
-
----
 
 ```python
 from googletrans import Translator
